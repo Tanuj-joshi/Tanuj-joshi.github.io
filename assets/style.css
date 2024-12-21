@@ -10,7 +10,7 @@
 
 body {
   background-color: hsl(0, 1%, 78%);
-  color: #131212;
+  color: #0a0a0a;
 }
 
 /* --------------------
@@ -18,7 +18,7 @@ body {
 -------------------- */
 .navbar {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   background-color: #e2dddd;
   padding: 1rem 2rem;
@@ -56,7 +56,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 4rem;
+  padding: 4rem 6rem;
   background: #e2dddd;
 }
 
