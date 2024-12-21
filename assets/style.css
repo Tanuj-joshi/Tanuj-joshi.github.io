@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #f8f8f8;
+  background-color: hsl(0, 1%, 78%);
   color: #333;
 }
 
@@ -20,7 +20,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
@@ -57,7 +57,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 4rem 2rem;
-  background: #fff;
+  background: #919090;
 }
 
 .home-content {
@@ -296,7 +296,7 @@ body {
   Footer
 -------------------- */
 footer {
-  background: #007bff;
+  background: #4a79aa;
   color: #fff;
   padding: 1rem 2rem;
   text-align: center;
