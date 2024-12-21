@@ -244,7 +244,7 @@ body {
 -------------------- */
 .contact-section {
   padding: 4rem 2rem;
-  background: #fff;
+  background: #3059c9;
 }
 
 .contact-container {
@@ -253,6 +253,21 @@ body {
   gap: 2rem;
   justify-content: center;
   align-items: flex-start;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+  color: #f3f3f3;
 }
 
 .contact-info {
@@ -295,7 +310,7 @@ body {
 /* --------------------
   Footer
 -------------------- */
-footer {
+/* footer {
   background: #4a79aa;
   color: #fff;
   padding: 1rem 2rem;
@@ -326,7 +341,7 @@ footer {
 
 .social-icons a:hover {
   color: #f3f3f3;
-}
+} */
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
