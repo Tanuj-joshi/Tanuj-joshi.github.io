@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Personal Portfolio Website" />
+  <meta name="keywords" content="Portfolio, Web Developer, Projects" />
+  <meta name="author" content="Your Name" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <!-- Google Fonts (Example) -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome (for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo">Your Name</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section class="home-section" id="home">
+    <div class="home-content">
+      <h1>Hello, I'm <span>Your Name</span></h1>
+      <p>
+        I am a [Your Profession/Role], specializing in web design and
+        development. I love building beautiful, user-friendly websites and
+        applications.
+      </p>
+      <a class="btn" href="#about">Know More</a>
+    </div>
+    <div class="home-image">
+      <!-- Replace the image source with your own image -->
+      <img src="assets/images/profile.jpg" alt="profile" />
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="section-title">
+      <h2>About Me</h2>
+      <div class="line"></div>
+    </div>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          Hello! I’m <strong>Your Name</strong>, a passionate developer with
+          a knack for creating engaging digital experiences. My main focus is on
+          building solutions that are both technically sound and visually
+          appealing. When I'm not coding, you can find me exploring the latest
+          tech, playing sports, or reading a good book.
+        </p>
+        <p>
+          Feel free to take a look at some of my projects below. 
+          If you have an interesting project or idea in mind, let’s connect!
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="assets/images/about.jpg" alt="About Image" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section" id="projects">
+    <div class="section-title">
+      <h2>Projects</h2>
+      <div class="line"></div>
+    </div>
+    <div class="projects-container">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="assets/images/project1.jpg" alt="Project 1" />
+        <div class="project-info">
+          <h3>Project Title 1</h3>
+          <p>
+            A short description of your project. This can be a website, an app,
+            or any other cool thing you developed!
+          </p>
+          <a href="https://github.com/yourusername/yourproject1" target="_blank">View Source</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="assets/images/project2.jpg" alt="Project 2" />
+        <div class="project-info">
+          <h3>Project Title 2</h3>
+          <p>
+            A short description of your second project. This is where you can
+            highlight features, technologies used, etc.
+          </p>
+          <a href="https://github.com/yourusername/yourproject2" target="_blank">View Source</a>
+        </div>
+      </div>
+
+      <!-- Add more project cards as needed -->
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills-section" id="skills">
+    <div class="section-title">
+      <h2>Skills</h2>
+      <div class="line"></div>
+    </div>
+    <div class="skills-container">
+      <div class="skill-item">
+        <i class="fab fa-html5"></i>
+        <h4>HTML5</h4>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-css3-alt"></i>
+        <h4>CSS3</h4>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-js"></i>
+        <h4>JavaScript</h4>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-react"></i>
+        <h4>React</h4>
+      </div>
+      <!-- Add more skills as needed -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="section-title">
+      <h2>Contact Me</h2>
+      <div class="line"></div>
+    </div>
+    <div class="contact-container">
+      <div class="contact-info">
+        <p>
+          Interested in working together or have any questions? Feel free to
+          reach out through the form below or email me at:
+          <strong><a href="mailto:youremail@example.com">youremail@example.com</a></strong>
+        </p>
+      </div>
+      <div class="contact-form">
+        <form action="https://formspree.io/f/yourFormID" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2024 Your Name. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="https://github.com/yourusername" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yourusername" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <!-- Add more social links if you want -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
