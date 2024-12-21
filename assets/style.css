@@ -18,9 +18,9 @@ body {
 -------------------- */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: #e2dddd;
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
@@ -57,7 +57,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 4rem 4rem;
-  background: #dad5d5;
+  background: #e2dddd;
 }
 
 .home-content {
