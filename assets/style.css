@@ -56,12 +56,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 10rem;
+  padding: 2rem 6rem;
   background: #e2dddd;
 }
 
 .home-content {
-  max-width: 70%;
+  max-width: 55%;
 }
 
 .home-content h1 {
@@ -314,7 +314,7 @@ body {
 footer {
   background: #5196df;
   color: #fff;
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
   text-align: center;
 }
 
@@ -322,7 +322,14 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.1rem;
+  font-size: 1rem;
+}
+.footer-content .line {
+  width: 200px;
+  height: 4px;
+  background: #f5f4f4;
+  margin: 0.2rem auto;
 }
 
 .footer-content p {
@@ -344,6 +351,7 @@ footer {
 .social-icons a:hover {
   color: #f3f3f3;
 }
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
