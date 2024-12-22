@@ -115,9 +115,9 @@ body {
 }
 
 .section-title .line {
-  width: 80px;
+  width: 200px;
   height: 4px;
-  background: #007bff;
+  background: #080808;
   margin: 0.5rem auto;
 }
 
@@ -311,8 +311,8 @@ body {
 /* --------------------
   Footer
 -------------------- */
-/* footer {
-  background: #4a79aa;
+footer {
+  background: #5196df;
   color: #fff;
   padding: 1rem 2rem;
   text-align: center;
@@ -342,7 +342,7 @@ body {
 
 .social-icons a:hover {
   color: #f3f3f3;
-} */
+}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
