@@ -105,16 +105,25 @@
   Skills Section
 -------------------- */
 .skills-section {
-  /* max-width: 900px; */
   margin: 0;
   padding: 1rem;
-  padding-left: 4rem;
+  padding-left: 8rem;
   background: #e2dddd;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Container for each section */
+.skills-container {
+  flex: 1;
+  min-width: 300px;
 }
 
 .skills-section h2 {
   text-align: left;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
   padding-left: 0;
 }
 
@@ -152,10 +161,22 @@
   height: 8px;
   background-color: #e2dddd;
   border-radius: 4px;
+  background: linear-gradient(to right, #007bff var(--skill-level), #ffffff var(--skill-level));
 }
 
-.skills-list li::after {
-  background: linear-gradient(to right, #007bff var(--skill-level), #ffffff var(--skill-level));
+.simple-list {
+  list-style-type: none;
+  /* padding: 0; */
+  padding-left: 2rem;
+  width: 100%;
+}
+
+.simple-list li {
+  margin: 15px 0;
+  padding-left: 0px; /* Reduced padding for better alignment */
+  font-size: 1rem;
+  color: #0a0a0a;
+  height: 19.8px;
 }
 
 /* --------------------
@@ -241,7 +262,7 @@ footer {
 .footer-content .line {
   width: 200px;
   height: 4px;
-  background: #f5f4f4;
+  background: #fff;
   margin: 0.2rem;
   margin-bottom: 2rem;
 }
@@ -263,7 +284,7 @@ footer {
 }
 
 .social-icons a:hover {
-  color: #f3f3f3;
+  color: #fff;
 }
 
 .contact-details {
