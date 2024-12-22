@@ -61,7 +61,7 @@ body {
 }
 
 .home-content {
-  max-width: 50%;
+  max-width: 70%;
 }
 
 .home-content h1 {
@@ -314,7 +314,7 @@ body {
 footer {
   background: #5196df;
   color: #fff;
-  padding: 1rem 2rem;
+  padding: 4rem 2rem;
   text-align: center;
 }
 
@@ -327,17 +327,18 @@ footer {
 
 .footer-content p {
   margin: 0;
+  font-size: 2rem;
 }
 
 .social-icons {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .social-icons a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .social-icons a:hover {
