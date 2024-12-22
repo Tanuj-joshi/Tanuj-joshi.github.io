@@ -8,10 +8,10 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
+/* body {
   background-color: hsl(0, 1%, 78%);
   color: #0a0a0a;
-}
+} */
 
 /* --------------------
   Navbar
@@ -46,7 +46,7 @@ body {
 }
 
 .nav-links li a:hover {
-  color: #007bff;
+  color: #e2dddd;
 }
 
 /* --------------------
@@ -102,62 +102,69 @@ body {
 }
 
 /* --------------------
+  Skills Section
+-------------------- */
+.skills-section {
+  /* max-width: 900px; */
+  margin: 0;
+  padding: 1rem;
+  padding-left: 4rem;
+  background: #e2dddd;
+}
+
+.skills-section h2 {
+  text-align: left;
+  margin-bottom: 2rem;
+  padding-left: 0;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.skills-list li {
+  margin: 15px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 20px;
+}
+
+.skills-list li::before {
+  content: attr(data-skill);
+  width: 150px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.skills-list li::after {
+  content: '';
+  position: absolute;
+  left: 150px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 8px;
+  background-color: #e2dddd;
+  border-radius: 4px;
+}
+
+.skills-list li::after {
+  background: linear-gradient(to right, #007bff var(--skill-level), #ffffff var(--skill-level));
+}
+
+/* --------------------
   Section Title
 -------------------- */
-.section-title {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.section-title h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.section-title .line {
-  width: 200px;
-  height: 4px;
-  background: #080808;
-  margin: 0.5rem auto;
-}
 
 /* --------------------
   About Section
 -------------------- */
-.about-section {
-  display: flex;
-  flex-direction: column;
-  padding: 4rem 2rem;
-  background-color: #f8f8f8;
-}
-
-.about-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
-}
-
-.about-text {
-  flex: 1;
-  min-width: 300px;
-}
-
-.about-text p {
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-.about-image {
-  flex: 1;
-  text-align: center;
-}
-
-.about-image img {
-  max-width: 400px;
-  width: 100%;
-  border-radius: 8px;
-}
 
 /* --------------------
   Projects Section
@@ -174,7 +181,7 @@ body {
 }
 
 .project-card {
-  background-color: #f9f9f9;
+  background-color: #e2dddd;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -208,105 +215,10 @@ body {
 .project-info a:hover {
   text-decoration: underline;
 }
-
-/* --------------------
-  Skills Section
--------------------- */
-.skills-section {
-  background: #f8f8f8;
-  padding: 4rem 2rem;
-}
-
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.skill-item {
-  text-align: center;
-  flex: 0 0 100px;
-}
-
-.skill-item i {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  color: #007bff;
-}
-
-.skill-item h4 {
-  font-size: 1rem;
-  font-weight: 500;
-}
-
 /* --------------------
   Contact Section
 -------------------- */
-.contact-section {
-  padding: 4rem 2rem;
-  background: #3059c9;
-}
 
-.contact-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.social-icons {
-  display: flex;
-  gap: 1rem;
-}
-
-.social-icons a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-.social-icons a:hover {
-  color: #f3f3f3;
-}
-
-.contact-info {
-  flex: 1;
-  min-width: 280px;
-  margin-bottom: 1rem;
-}
-
-.contact-info a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-}
-
-.contact-form {
-  flex: 1;
-  min-width: 280px;
-}
-
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-.contact-form button.btn {
-  align-self: flex-start;
-}
 
 /* --------------------
   Footer
@@ -314,7 +226,7 @@ body {
 footer {
   background: #5196df;
   color: #fff;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
   text-align: center;
 }
 
@@ -324,7 +236,7 @@ footer {
   align-items: center;
   gap: 0.5rem;
   font-size: 1.3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 .footer-content .line {
   width: 200px;
@@ -354,6 +266,36 @@ footer {
   color: #f3f3f3;
 }
 
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.contact-details p {
+  font-size: 1rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-details i {
+  width: 20px;
+  color: #fff;
+}
+
+.contact-details a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
